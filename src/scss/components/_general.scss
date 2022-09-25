@@ -1,0 +1,9 @@
+.line{
+    background-color: $darkBeige;
+    display: block;
+
+    &.line-hr{
+        height:1px;
+        width:100%;
+    }
+}

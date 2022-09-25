@@ -1,0 +1,111 @@
+.main-page {
+  .header-block {
+    position: relative;
+  }
+  .header-block__bg {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .header-block__container {
+    display: flex;
+    padding-left: min(rem(171), px-to-perc(171, 1920));
+    margin-bottom: rem(226);
+
+    @include max(sm){
+      margin-bottom:rem(150);
+    }
+  }
+  .header-block__slider-collections {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    flex: 100%;
+    margin-bottom: max(rem(-120), vw(-120));
+
+    .header-block__slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .header-block__slider-background {
+    position: absolute;
+    width: 100%;
+    width: min(rem(458), px-to-perc(458, 703));
+    height: px-to-perc(717, 815);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $yellow-1;
+  }
+  .header-block__slide {
+    flex: 1 0 100%;
+    z-index: 2;
+  }
+  .header-block__slide-image {
+    max-width: min(rem(703), 100%);
+    height: auto;
+  }
+  .header-block__slider-descriptions {
+    display: flex;
+    flex-flow: row;
+    flex: 100%;
+    overflow: hidden;
+    align-items: center;
+
+    .header-block__slide {
+      // max-width:rem(635);
+      flex: 1 0 100%;
+
+      &.slide-active {
+        .header-block__slide-title {
+          -webkit-text-fill-color: $darkGrey;
+        }
+      }
+    }
+    .header-block__slide-content {
+      max-width: rem(635);
+    }
+  }
+  .header-block__slide-title {
+    margin-bottom: rem(26);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px $darkGrey;
+
+    @include max(sm) {
+      margin-bottom: rem(16);
+    }
+  }
+  .header-block__line {
+    max-width: px-to-perc(185, 635);
+    margin-bottom: rem(26);
+  }
+  .header-block__slide-description {
+    max-width: px-to-perc(586, 635);
+    @include max(768) {
+      display: none;
+    }
+  }
+  .header-block__slider-wrapper {
+    @include max(sm) {
+      margin-left: rem(10);
+    }
+  }
+  .header-block__slider-pagination {
+    position: absolute;
+    bottom: max(rem(-85), vw(-85));
+    left: 50%;
+    transform: translate(-50%);
+
+    @include max(bg){
+      bottom:vw(-150)
+    }
+  }
+}

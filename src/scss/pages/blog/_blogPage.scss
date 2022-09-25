@@ -1,0 +1,12 @@
+.blog-page__container{
+    display:flex;
+    justify-content: space-between;
+    gap: min(rem(30),px-to-perc(30,1115));
+    z-index: 2;
+    position: relative;
+    margin-top:rem(59);
+
+    @include max(sm){
+        flex-flow:row wrap;
+    }
+}

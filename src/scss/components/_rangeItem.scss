@@ -1,0 +1,17 @@
+.range-item {
+    background: $white;
+    height:rem(2);
+    position: relative;
+    width:100%;
+    border-radius: 4px;
+    overflow:hidden;
+}
+.range-value {
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:30%;
+    background-color: $darkGrey;
+
+}

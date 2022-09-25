@@ -1,0 +1,23 @@
+
+    .projects-promo-block {
+        .projects-promo-block__container {
+            padding:0 rem(28) rem(88) rem(28);
+            display: flex;
+            flex-flow:column;
+            align-items: center;
+            width:100%;
+            overflow: hidden;
+
+            @include max(sm){
+                align-items: flex-start;
+            }
+        }
+    }
+
+
+    .filter-block{
+        @include max(sm){
+            flex-flow:row wrap;
+            justify-content: center;
+        }
+    }

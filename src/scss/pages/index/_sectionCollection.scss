@@ -1,0 +1,98 @@
+.collections-block{
+
+    .collections-block__container {
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+        padding-bottom:rem(104);
+        .line {
+            @include mb-24;
+            width:min(rem(252),px-to-perc(252,730))
+           
+        }
+    }
+    .collections-block__header-container {
+        @include pb-24;
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+        max-width: rem(730);
+
+        @include max(sm){
+            padding:0 rem(10) rem(24) 0;
+        }
+
+
+    }
+    .collections-block__header {
+        @include mb-24;
+    }
+    
+    .collections-block__description {
+        text-align: center;
+    }
+    .collections-block__collections-container {
+        display: flex;
+        justify-content: center;
+        flex:100%;
+        width:100%;
+        gap:min(rem(29),px-to-perc(29,1920));
+        padding:0 min(rem(28), px-to-perc(26,1920));
+
+        @include max(sm){
+            flex-flow:column;
+        }
+    }
+    .collections-block__collections-card {
+        position: relative;
+        cursor: pointer;
+        overflow:hidden;
+  &:hover{
+      .collections-block__collections-image{
+            opacity: 0.7;
+      }
+      .collections-block__collections-card__content{
+          opacity:1;
+      }
+  }
+    }
+    .collections-block__collections-image, .collections-block__collections-card__content{
+        transition: $a-time opacity ease;
+        will-change: opacity;
+    }
+    .collections-block__collections-image{
+        @include max(sm){
+            width:100%;
+        }
+    }
+    .collections-block__collections-card__content {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align:center;
+        opacity:0;
+        width:100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow:row wrap;
+
+        padding:0 rem(5);
+
+        @include max(sm){
+            flex-flow:column;
+        }
+
+        .line-hr{
+            width: px-to-perc(200,224);
+            margin:0 auto;
+        }
+    }
+    .collections-block__collections-card +.collections-block__collections-card{
+        @include max(sm){
+            margin-top:rem(30)
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use 'sass:map';
+@mixin font($fontFamily,$fontWeight,$url){
+    @font-face{
+        font-family:$fontFamily;
+        font-weight:$fontWeight;
+        src:url(#{$url}) format('woff2')
+    }
+}
+
+@mixin max($size){
+
+    @if(map.has-key($breakpoints-max,$size)){
+       @media  screen and ( max-width:#{rem(map-get($breakpoints-max,$size))}) {
+           @content;
+       }
+     }@else{
+         @media screen and (max-width:#{rem($size)}){
+             @content;
+         }
+     }
+ }
+ @mixin min($size,$value){
+
+    @if(map.has($breakpoints-min,$size)){
+       @media  screen and ( min-width:#{map-get($breakpoints-min,$size)}px) {
+           @content;
+       }
+     }@else{
+         @media screen and (min-width:#{$size}px){
+             @content;
+         }
+     }
+ }

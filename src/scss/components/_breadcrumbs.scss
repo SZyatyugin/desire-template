@@ -1,0 +1,35 @@
+.breadcrumbs {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 5;
+    width:100%;
+}
+.breadcrumbs--bg-lg{
+    background-color: $lightGrey;
+    position: relative;
+    min-height:rem(56);
+    display: flex;
+    align-items: center;
+    color:$grey;
+}
+.breadcrumbs__wrapper {
+    padding: rem(27) 0;
+    position: relative;
+    width:100%;
+}
+.breadcrumbs__list {
+    position: absolute;
+    top:50%;
+    left:min(407px,px-to-perc(407px,1920px));
+    color:inherit;
+    display: flex;
+    transform: translateY(-50%);
+}
+.breadcrumbs__list-item {
+    color:inherit;
+
+    a{
+        color:inherit;
+    }
+}

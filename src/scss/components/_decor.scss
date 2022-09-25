@@ -1,0 +1,16 @@
+.divider__line{
+    
+
+    &--hr{
+    @extend .divider__line;
+    height: 1px;
+    }
+    &--light{
+    @extend .divider__line;
+    background-color: $lightGrey;
+    }
+    &--xl{
+    @extend .divider__line;
+    width:100%;
+    }
+} 

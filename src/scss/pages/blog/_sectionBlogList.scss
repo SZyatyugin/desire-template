@@ -1,0 +1,103 @@
+.blog__section-news {
+@include max(sm){
+    order:2;
+}
+    .blog__section-container {
+        
+    }
+    .blog__section-news__container {
+    }
+    .blog__section-news__item {
+        max-width:rem(729);
+        padding-bottom:rem(50);
+
+        .news__iten-quote-block{
+            display: none;
+        }
+        .news__item-description__block {
+            padding-bottom:0;
+        }
+        .news__item-description {
+            margin-bottom:0;
+        }
+    }
+    .blog__section-news__item--quote {
+        .news__iten-quote-block{
+            display: block;
+        }
+        .news__item-description__block {
+            padding-bottom:rem(72);
+        }
+        .news__item-description {
+            margin-bottom:rem(50);
+        }
+    }
+    .news__item-image__wrapper {
+        max-width: rem(729);
+        min-height: min(rem(446),vw-a(1920,446));
+        margin-bottom:rem(24);
+    }
+    .news__item-image {
+        width: 100%;
+        height:100%;
+
+    }
+    .news__item-info {
+    }
+    .news__item-info__list {
+        display: flex;
+        gap:rem(4);
+        margin-bottom: rem(9);
+    }
+    .news__item-info__list-item {
+    }
+    .divider {
+    }
+   
+    .news__item-header {
+        margin-bottom:rem(6);
+    }
+    
+
+    .news__iten-quote-block {
+        padding:min(rem(54),px-to-perc(54,1112)) min(rem(64),px-to-perc(64,1112));
+        background-color: $lightGrey;
+       
+    }
+    .news__item-quote-block__wrapper{
+
+    }
+    .news__item-quote {
+        text-align: center;
+        margin-bottom:rem(23);
+    }
+    .line-hr {
+        margin-bottom:rem(23);
+    }
+    .news__item-quote__author {
+        text-align: center;
+    }
+    .blog__section-news__item--reduced {
+
+        .news__item-description{
+            display: none;
+        }
+        .news__iten-quote-block{
+            display: none;
+        }
+        .news__item-description__block {
+            padding-bottom:rem(40);
+        }
+        .news__item-description {
+            margin-bottom:rem(50);
+        }
+    }
+    .blog__section-pagination {
+        margin-bottom:rem(66);
+    }
+    .blog__section-pagination-list {
+       margin-top: rem(-6);
+    }
+    .blog__section-pagination-list__item {
+    }
+}

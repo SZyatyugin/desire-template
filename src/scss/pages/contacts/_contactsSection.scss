@@ -1,0 +1,47 @@
+.contacts__section {
+}
+.contacts__container {
+    margin-bottom:rem(101);
+}
+
+.contacts__title-wrapper {
+    width:fit-content;
+}
+
+.contacts__title {
+    margin-bottom:rem(40);
+}
+
+.line-hr {
+    margin-bottom:rem(40);
+}
+.contacts__aside {
+    max-width: rem(825);
+    margin-left: auto;
+}
+.socials__list {
+    margin-bottom:rem(21);
+    display: flex;
+}
+.socials__list-item + .socials__list-item{
+    margin-left:rem(36);
+}
+.social__link {
+}
+.footer__social-item {
+}
+.contacts__description {
+    margin-bottom:rem(10);
+}
+.contacts__addresses {
+}
+.contacts__addresses-item {
+}
+
+.footer-info-email {
+}
+.contacts__form {
+    .comment__form-title{
+        display: none;
+    }
+}

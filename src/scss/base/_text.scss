@@ -1,0 +1,139 @@
+@use 'sass:math';
+$font:'Grammatika Regular';
+$font-bold:'Grammatika Bold';
+$font-bold-shifted:'Grammatika Bold Shifted';
+$font-slanted:'Grammatika Slanted';
+.p1{
+font-family:$font;
+line-height: calc(22px/16px);
+color:$black;
+font-size:rem(16);
+@include max(lg){
+    font-size:fscale(1440,315,16,9)
+}
+}
+.p1-light{
+    @extend .p1;
+    color:$lightGrey-1;
+}
+.p1-db{
+    @extend .p1;
+    color:$darkBeige;
+}
+.p1-fs-20{
+    @extend .p1;
+}
+.p1-grey{
+    @extend .p1;
+    color:$grey;
+}
+.p1-dg{
+    @extend .p1;
+    color:$darkGrey;
+}
+.p1-bold{
+@extend .p1;
+font-family: $font-bold;
+font-weight: 700;
+}
+.p1-fs-14{
+    @extend .p1;
+    line-height: calc(28px/14px);
+    font-size: rem(14);
+
+    @include max(lg){
+        font-size:fscale(1440,315,14,9)
+    }
+
+    &.p1-fc-grey{
+        @extend .p1-fs-14;
+        color:$grey-2;
+    }
+}
+
+
+.p1-medium{
+    @extend .p1;
+    font-family: $font-bold-shifted;
+    font-weight: 600;
+}
+.p1-bold{
+    @extend .p1;
+    font-family: $font-slanted;
+    font-weight: 700;
+}
+.h1{
+    font-family:'Grammatika Bold';
+    font-weight: 700;
+    font-size: rem(110);  
+    line-height: calc(134px/110px);
+    color:$darkGrey;
+
+    @include max(lg){
+        font-size:rem(86)
+    }
+    @include max(bg){
+        font-size:rem(64)
+    }
+    @include max(md){
+        font-size:rem(48)
+    }
+    @include max(sm){
+        font-size:rem(32)
+    }
+    @include max(xs){
+        font-size:rem(24)
+    }
+}
+.h2{
+    font-family:'Grammatika Bold';
+    font-weight: 700;
+    font-size: rem(60);  
+    line-height: calc(80px/60px);
+    color:$darkGrey;
+    @include max(lg){
+        font-size:fscale(1440,315,60,16)
+    }
+}
+.h3{
+ font-family:'Grammatika Bold';
+ font-weight: 700;
+ font-size: rem(36);  
+ line-height: calc(51px/36px);
+ color:$darkGrey;
+ @include max(lg){
+    font-size:fscale(1440,315,36,14)
+}
+}
+.h3-fs-28{
+    @extend .h3;
+    font-size: rem(28);
+    line-height: cals(40px/28px);
+
+    @include max(lg){
+        font-size:fscale(1440,315,28,12)
+    }
+}
+.h3-fs-24{
+    @extend .h3;
+    font-size: rem(24);
+    line-height: calc(38px/24px);
+    @include max(lg){
+        font-size:fscale(1440,315,28,11)
+    }
+}
+.h3-italic{
+    @extend .h3;
+    font-style: italic;
+}
+.h4{
+    font-family:'Grammatika Slanted';
+    font-weight: 700;
+    font-size: rem(20);  
+    line-height: calc(24px/20px);
+    color:$darkGrey;
+    @include max(lg){
+        font-size:fscale(1440,315,28,10)
+    }
+   }
+

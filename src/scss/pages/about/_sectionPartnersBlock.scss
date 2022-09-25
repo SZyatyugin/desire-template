@@ -1,0 +1,40 @@
+.about__partners-block {
+}
+.about__partners-container{
+    padding:0 min(rem(49),px-to-perc(49,1920)) rem(75) min(rem(49),px-to-perc(49,1920));
+
+}
+.about__partners-wrapper {
+    @include max(sm){
+        overflow-x: scroll;
+        
+    }
+}
+
+.about__partners-list {
+
+    @include max(sm){
+        width:150%;
+        
+    }
+}
+
+.about__partners-list__item {
+    display: flex;
+    flex-flow:row;
+    gap:min(rem(68),px-to-perc(68,1920));
+
+    @include max(sm){
+        flex:1 0;
+    }
+}
+
+.about__partners-logo__wrapper {
+    width:min(rem(289),vw-a(1920,289));
+    height:auto;
+}
+.about__partners-logo {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}

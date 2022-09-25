@@ -1,0 +1,17 @@
+.slider {
+  .slider-wrapper {
+    display: flex;
+  }
+  .slider__pagination {
+    display: flex;
+    gap:26px;
+    z-index: 5;
+  }
+  .slider__pagination-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: $black;
+    cursor: pointer;
+  }
+}

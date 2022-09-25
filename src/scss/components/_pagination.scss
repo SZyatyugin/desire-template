@@ -1,0 +1,12 @@
+.pagination-list{
+    display:flex;
+    justify-content: center;
+}
+.pagination__btn{
+    cursor: pointer;
+    padding:rem(6) rem(6);
+}
+.pagination__btn-next,.pagination__btn-prev{
+    cursor: pointer;
+    padding:rem(6) rem(6);
+}

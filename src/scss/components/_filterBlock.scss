@@ -1,0 +1,18 @@
+
+.filter-block {
+    display: flex;
+    gap:rem(25);
+    padding-bottom:rem(40);
+}
+.filter-block__item {
+    border: 1px solid hsla(212, 2%, 27%, 0.5);
+    border-radius: 20px;
+    color:inherit;
+    padding:rem(6) rem(16);
+
+    &.active{
+        background-color:$yellow;
+        color:$darkGrey;
+        border:transparent;
+    }
+}

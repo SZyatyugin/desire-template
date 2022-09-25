@@ -1,0 +1,115 @@
+.blog__section-aside {
+    padding-bottom:rem(66);
+
+    @include max(sm){
+        order:1;
+        flex:1 0 100%;
+    }
+    .news__item-info__list{
+        display: flex;
+        gap:rem(4);
+    }
+}
+.blog__section-aside__wrapper {
+    position:sticky;
+    top:rem(50);
+
+    @include max(sm){
+        position: relative;
+        top:0;
+    }
+}
+.search-form__wrapper {
+    padding-bottom:rem(50);
+}
+.search-form {
+}
+.search-form__input-label {
+position: relative;
+}
+.search-form__input {
+    padding:rem(6) rem(36) rem(6) rem(18);
+    width:100%;
+    border:1px solid $grey-3;
+    border-radius: 20px;
+}
+.search-form__placeholder {
+    position: absolute;
+    left:rem(18);
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.search-form__btn {
+    position: absolute;
+    right:rem(19);
+    top:50%;
+    transform: translateY(-50%);
+    width:rem(17);
+    height:rem(17);
+}
+.blog__section-aside__cateogiies-wrapper {
+}
+.blog__section-aside__categories-title {
+    margin-bottom:rem(14);
+}
+
+.blog__section-aside__categories-list {
+    display: flex;
+    flex-flow:column;
+    gap:rem(11);
+    margin-bottom:rem(48);
+
+    
+}
+.blog__section-aside__categories-list__item {
+ flex:1 0 100%;
+ display: flex;
+ gap:rem(5);
+
+ 
+}
+
+.blog__section-aside__category {
+}
+.blog__section-aside__recent-posts__wrapper {
+    margin-bottom:rem(50);
+
+    @include max(sm){
+        display: none;
+    }
+}
+.blog__section-aside__posts-title {
+}
+.blog__section-aside__posts-list {
+    display: flex;
+    flex-flow: column;
+    gap:rem(11);
+}
+.blog__section-aside__posts-item {
+}
+.blog__section-aside__posts-item__title {
+}
+.news__item-info__list {
+}
+.news__item-info__list-item {
+}
+.divider {
+}
+.blog__section-aside__tags-wrapper {
+}
+.blog__section-aside__tags-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap:rem(10);
+}
+.blog__section-aside__tags-title{
+    margin-bottom:rem(10);
+}
+.blog__section-aside__tag {
+    border: 1px solid #454647;
+    border-radius: 14px;
+    padding: 0 rem(16);
+}
+.blog__section-aside__socials-wrapper {
+}

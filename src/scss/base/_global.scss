@@ -1,0 +1,25 @@
+html,body{
+    height:100%;
+}
+.body{
+    font-family: $font;
+    color:$grey;
+    overflow:hidden;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main{
+    flex:1 0 100%;
+    position: relative;
+}
+.footer{
+    flex: 0 0 auto;
+}
+.container{
+    max-width:rem(1140);
+    margin:0 auto;
+    padding: 0 rem(15);
+}

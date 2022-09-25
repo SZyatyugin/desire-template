@@ -1,0 +1,17 @@
+//button
+.btn{
+    min-width:rem(160);
+    border-radius: 50px;
+    min-height:rem(40);
+    transition: opacity 0.3s linear;
+    &__dark{
+        @extend .btn;
+        background-color: $darkGrey;
+        color:$lightYellow;
+
+    }
+
+    &:hover{
+        opacity: 0.9;
+    }
+}

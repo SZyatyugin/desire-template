@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use 'sass:math';
+
+@function vw($value){
+   $result:math.div(math.div($value,$layout),0.01)*1vw;
+   @return $result;
+}
+
+@function vw-a($size,$px){
+   @return math.div(math.div($px,$size),0.01)*1vw;
+}
+
+@function em($value){
+   @return math.div($value,$em)*1em;
+}
+@function rem($value){
+   @return math.div($value,$em)*1rem;
+}
+@function px-to-perc($value,$width){
+   @return math.div($value,$width)*100%;
+}
+
+@function fscale($maxWidth,$minWidth,$maxValue,$minValue){
+  
+   $diffWidth:calc($maxWidth - $minWidth);
+
+   $diffValue:calc($maxValue - $minValue);
+
+   $result:calc((rem($maxValue) - rem($diffValue) * math.div($maxWidth,$diffWidth) + rem($diffValue)*(var(--inner-width) / $diffWidth)));
+   
+   @return $result;
+}

@@ -1,0 +1,130 @@
+.form__body {}
+
+.input__wrapper {
+    position: relative;
+
+    &--textarea {
+
+        .input__placeholder {
+            top: rem(10);
+            left: rem(14);
+        }
+    }
+
+    &--input {
+
+        .input__placeholder {
+            bottom: rem(6);
+            left: rem(8);
+        }
+    }
+}
+
+.input__container {
+    position: relative;
+}
+
+.input__item--lg {}
+
+.input__label {
+    position: relative;
+}
+
+.input__item {
+    width: 100%;
+    padding: rem(6) rem(15);
+    border: 1px solid $lightGrey;
+    border-radius: 24px;
+}
+
+.input__textarea {
+    resize: none;
+    width: 100%;
+    border: none;
+    padding: rem(14);
+    border: 1px solid $lightGrey;
+    border-radius: 24px;
+}
+
+.input__placeholder {
+    position: absolute;
+    pointer-events: none;
+    transition: transform .3s cubic-bezier(.17, .67, .83, .67);
+
+}
+
+.input__error {}
+
+.form__actions {}
+
+.form__submit {}
+
+.btn {}
+
+.btn--submit {}
+
+.btn--dark {}
+
+.input__wrapper--textarea {
+    .input__textarea:focus~.input__placeholder {
+        transform: translateY(calc((100% + rem(5))*-1));
+    }
+}
+
+.input__wrapper--input {
+    .input__item:focus~.input__placeholder {
+        transform: translateY(-100%);
+    }
+}
+
+.input__wrapper--checkbox {
+    border: none;
+    border-radius: unset;
+    display: flex;
+    position: relative;
+
+    .input__item {
+        position: absolute;
+        opacity: 0;
+        width: rem(21);
+        height: rem(21);
+
+
+        &:checked~.checkbox {
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    .input__label {
+        position: relative;
+        margin-left: rem(6);
+    }
+
+    .checkbox {
+
+        border: 1px solid $lightGrey;
+        width: rem(21);
+        height: rem(21);
+        position: relative;
+        pointer-events: none;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $lightGrey;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+
+
+}

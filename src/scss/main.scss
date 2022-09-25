@@ -1,0 +1,46 @@
+@import './utilities/variables';
+@import './utilities/functions';
+@import './utilities/mixins';
+@import './utilities/margins';
+
+@import './base/typography';
+@import './base/text';
+
+@import './base/reset';
+@import './base/global';
+
+@import './components/general';
+@import './components/header';
+@import './components/footer';
+@import './components/buttons';
+@import './components/rightSideMenu';
+@import './components/slider';
+@import './components/filterBlock';
+@import './components/projectsGrid';
+@import './components/breadcrumbs';
+@import './components/rangeItem';
+@import './components/pagination';
+@import './components/decor';
+@import './components/form';
+
+@import './pages/index/sectionHeader';
+@import './pages/index/sectionCollection';
+@import './pages/index/sectionPromo';
+@import './pages/index/sectionPromoWork';
+@import './pages/index/sectionProjects';
+@import './pages/index/sectionBlog';
+
+@import './pages/about/sectionAboutHeader';
+@import './pages/about/sectionDescription';
+@import './pages/about/sectionPromoBlock';
+@import './pages/about/sectionPartnersBlock';
+
+@import './pages/blog/blogPage';
+@import './pages/blog/sectionBlogList';
+@import './pages/blog/sectionBlogAside';
+
+@import './pages/contacts/mapSection';
+@import './pages/contacts/contactsSection';
+@import './pages/contacts/contactsSliderSection';
+
+@import './pages/oneBlog/oneBlog';

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desire</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <%= _.template(require('../../components/_header.html').default)()%>
+      <%= _.template(require('../../components/_rightSideMenu.html').default)()%>
+     
+      <main class="main blog-item__page">
+        <%= _.template(require('../../components/block/_breadcrumbs.html').default)()%>
+        <section class="blog-item__page-container container">
+            <div class='blog-item__page-wrapper'></div>
+            <%= _.template(require('../../components/blog/_sectionBlogAside.html').default)()%>
+        </section>
+      </main>
+      <%=_.template(require('../../components/_footer.html').default)()%>
+    </div>
+  </body>
+</html>
